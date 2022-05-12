@@ -1,0 +1,44 @@
+@forward "variables";
+@forward "boilerplate";
+
+article {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 20rem;
+  background-color: var(--white);
+  padding-inline: 1rem;
+  padding-block: 1rem 2.75rem;
+  border-radius: 0.875rem;
+
+  &__imagesection {
+    background-image: url(/images/image-qr-code.png);
+    background-position: center;
+    background-size: cover;
+    padding: 9rem;
+    max-width: 18rem;
+    border-radius: 0.5rem;
+  }
+
+  &__textsection {
+    text-align: center;
+
+    h3 {
+      margin-block: 2.125rem 1.25rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark-blue);
+    }
+
+    p {
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: var(--grayish-blue);
+    }
+  }
+}
